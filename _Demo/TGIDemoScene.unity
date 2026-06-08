@@ -1848,8 +1848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KenRampage.Unity.Input.PlayerInputSchemeController
   _playerInput: {fileID: 764531332}
-  _applySchemeOnStart: 0
-  _initialScheme: 
+  _applySchemeOnStart: 1
+  _initialScheme: Keyboard&Mouse
   _onSchemeChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2092,8 +2092,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319726661}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 346.6311, y: 286.1471, z: -25.364758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2108,9 +2108,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1319726661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5d692914ed904649890e753274d1735, type: 3}
+  m_Script: {fileID: 11500000, guid: d2a1e01ae2bf0574a9932159152f83ff, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::KenRampage.Unity.Input.InputActionListener
+  _actionReference: {fileID: 3070659592740507257, guid: 96349475b1e669141af825b254809c4d, type: 3}
+  onStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 581418274}
+        m_TargetAssemblyTypeName: Adroit.Tobii.TGI.TGIHardwareManager, Assembly-CSharp
+        m_MethodName: ToggleDebugMarkers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPerformed:
+    m_PersistentCalls:
+      m_Calls: []
+  onCanceled:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1467145564
 GameObject:
   m_ObjectHideFlags: 0

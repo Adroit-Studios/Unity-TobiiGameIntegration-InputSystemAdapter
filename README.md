@@ -11,8 +11,8 @@ Bridges Tobii Game Integration (TGI) tracking data into the Unity Input System a
 ## Requirements
 
 - Unity 6.0 or newer
-- Unity Input System package (`com.unity.inputsystem`)
-- Tobii Game Integration SDK available here: https://developer.tobii.com/pc-gaming/downloads/ 
+- Unity Input System package 1.7 or newer (`com.unity.inputsystem`)
+- Tobii Game Integration API SDK v9.0.4 or newer. available here: https://developer.tobii.com/pc-gaming/downloads/ 
 
 ## Installation (Git URL)
 

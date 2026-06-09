@@ -63,7 +63,7 @@ If Unity throws `DllNotFoundException`, the usual causes are:
 
 - the DLL was not copied into the project
 - the wrong DLL variant was copied
-- `TobiiGameIntegrationApi.cs` is expecting a debug DLL name such as `tobii_gameintegration_x64_d.dll`, but only a release DLL is present
+- `TobiiGameIntegrationApi.cs` is expecting a debug DLL name such as `tobii_gameintegration_x64_d.dll`, but only a release DLL is present. You may need to edit the provided `TobiiGameIntegrationApi.cs` in order to point to the non _d versions of the .dll files.
 
 
 ## Quick Start

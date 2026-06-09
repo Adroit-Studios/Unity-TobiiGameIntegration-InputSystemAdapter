@@ -367,7 +367,6 @@ MonoBehaviour:
   _eventSystem: {fileID: 2136100512}
   _targetRect: {fileID: 223956228}
   _clampToScreen: 1
-  _uiInputModule: {fileID: 0}
 --- !u!1 &273913838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,16 +1339,25 @@ MonoBehaviour:
   onStarted:
     m_PersistentCalls:
       m_Calls:
-      - {m_Target: {fileID: 929782038}, m_TargetAssemblyTypeName: KenRampage.Unity.Input.PlayerInputSchemeController, Assembly-CSharp, m_MethodName: NextScheme, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
+      - m_Target: {fileID: 929782038}
+        m_TargetAssemblyTypeName: KenRampage.Unity.Input.PlayerInputSchemeController,
+          Assembly-CSharp
+        m_MethodName: NextScheme
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPerformed:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   onCanceled:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
 --- !u!1 &764531328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,8 +1766,18 @@ MonoBehaviour:
   _onSchemeChanged:
     m_PersistentCalls:
       m_Calls:
-      - {m_Target: {fileID: 1467145565}, m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro, m_MethodName: SetText, m_Mode: 0, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
+      - m_Target: {fileID: 1467145565}
+        m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+        m_MethodName: SetText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _logDebugMessages: 1
   _currentScheme: 
 --- !u!1 &1033148209
@@ -1922,16 +1940,24 @@ MonoBehaviour:
   onStarted:
     m_PersistentCalls:
       m_Calls:
-      - {m_Target: {fileID: 581418274}, m_TargetAssemblyTypeName: Adroit.Tobii.TGI.TGIHardwareManager, Assembly-CSharp, m_MethodName: ToggleDebugMarkers, m_Mode: 1, m_Arguments: {m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: , m_BoolArgument: 0}, m_CallState: 2}
-    m_CallsDirty: 1
+      - m_Target: {fileID: 581418274}
+        m_TargetAssemblyTypeName: Adroit.Tobii.TGI.TGIHardwareManager, Assembly-CSharp
+        m_MethodName: ToggleDebugMarkers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPerformed:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
   onCanceled:
     m_PersistentCalls:
       m_Calls: []
-    m_CallsDirty: 1
 --- !u!1 &1467145564
 GameObject:
   m_ObjectHideFlags: 0

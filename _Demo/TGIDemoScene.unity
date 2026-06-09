@@ -951,10 +951,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499005656}
-  - component: {fileID: 499005660}
   - component: {fileID: 499005659}
   - component: {fileID: 499005658}
   - component: {fileID: 499005657}
+  - component: {fileID: 499005660}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1027,7 +1027,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 499005660}
-        m_TargetAssemblyTypeName: ProjectCyclops.Utility.QuitGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: UnityTobiiGameIntegrationInputSystemAdapter.Demo.QuitGame,
+          Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -1085,9 +1086,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 499005655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b15868bd332550e45b4b50c293cac0ec, type: 3}
+  m_Script: {fileID: 11500000, guid: eee92d90b25d64b4788c3c19efd5730f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityTobiiGameIntegrationInputSystemAdapter.Demo.QuitGame
 --- !u!1 &581418272
 GameObject:
   m_ObjectHideFlags: 0

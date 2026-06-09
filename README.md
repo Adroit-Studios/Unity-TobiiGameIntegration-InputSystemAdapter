@@ -82,6 +82,8 @@ If Unity throws `DllNotFoundException`, the usual causes are:
 
 This package includes an optional sample scene under `Samples~/TGI Demo`.
 
+<!-- Maintainer note: Keep sample content in Samples~ so it stays hidden from normal package import and is exposed through Package Manager sample import only. -->
+
 ## License
 
 See [LICENSE.md](LICENSE.md).

@@ -24,6 +24,47 @@ In Unity Package Manager:
 
    `https://github.com/Adroit-Studios/Unity-TobiiGameIntegration-InputSystemAdapter.git`
 
+## Tobii SDK Setup
+
+This package does not ship the Tobii Game Integration SDK files. You need to copy the required SDK files from the official Tobii SDK into your Unity project.
+
+### 1. Add the managed wrapper script
+
+Copy `TobiiGameIntegrationApi.cs` from the Tobii SDK into your project under a normal runtime scripts folder, for example:
+
+- `Assets/Imported/Tobii/Scripts/TobiiGameIntegrationApi.cs`
+
+The exact folder name is not important, but it must be inside `Assets/` so Unity compiles it.
+
+### 2. Add the native DLLs
+
+Copy the Tobii native plugin DLLs into a plugin folder in your project, for example:
+
+- `Assets/Plugins/Tobii/`
+
+On Windows Editor x64, the important file is typically:
+
+- `tobii_gameintegration_x64.dll`
+
+
+### 3. Verify Unity import settings
+
+After copying the DLLs into `Assets/Plugins/Tobii/`, select each DLL in Unity and confirm the Plugin Inspector settings match the platform you want to support.
+
+For a Windows-only setup, the DLL should usually be enabled for:
+
+- Editor
+- Standalone
+- Windows x86_64
+
+### 4. Common issue
+
+If Unity throws `DllNotFoundException`, the usual causes are:
+
+- the DLL was not copied into the project
+- the wrong DLL variant was copied
+- `TobiiGameIntegrationApi.cs` is expecting a debug DLL name such as `tobii_gameintegration_x64_d.dll`, but only a release DLL is present
+
 
 ## Quick Start
 

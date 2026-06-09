@@ -1,0 +1,27 @@
+{
+  "name": "com.adroit.tobii.tgi-inputsystem-adapter",
+  "version": "0.1.0",
+  "displayName": "Tobii TGI Input System Adapter",
+  "description": "Bridges Tobii Game Integration data into Unity Input System as virtual devices.",
+  "unity": "6.0.0",
+  "author": {
+    "name": "Adroit Studios",
+    "url": "https://github.com/Adroit-Studios"
+  },
+  "keywords": [
+    "tobii",
+    "eye-tracking",
+    "input-system",
+    "virtual-device"
+  ],
+  "dependencies": {
+    "com.unity.inputsystem": "1.7.0"
+  },
+  "samples": [
+    {
+      "displayName": "TGI Demo",
+      "description": "Demo scene and scripts for virtual gaze/head devices.",
+      "path": "Samples~/TGI Demo"
+    }
+  ]
+}

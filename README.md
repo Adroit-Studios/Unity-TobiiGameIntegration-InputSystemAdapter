@@ -57,21 +57,8 @@ In Unity Package Manager:
 
    `https://github.com/Adroit-Studios/Unity-TobiiGameIntegration-InputSystemAdapter.git`
 
-### 4. Common issues
-
-If Unity throws `DllNotFoundException`, usual causes are:
-
-- native DLL not copied into `Assets/Plugins`
-- wrong native DLL variant for your platform
-- native DLL platform settings are incorrect
-
-## Installation (Git URL)
-If package scripts cannot resolve `Tobii.GameIntegration.Net` types:
-
-- managed `Tobii.GameIntegration.Net.dll` is missing
-- `Auto Reference` is disabled on the managed DLL
-- both `TobiiGameIntegrationApi.cs` and `Tobii.GameIntegration.Net.dll` are present and conflicting
-
+Once installed, go to package manager, select this package then go to the "Samples" tab in order to install example scene and assets.
+<!-- Maintainer note: Keep sample content in Samples~ so it stays hidden from normal package import and is exposed through Package Manager sample import only. -->
 
 ## Quick Start
 
@@ -84,12 +71,6 @@ If package scripts cannot resolve `Tobii.GameIntegration.Net` types:
 
 - In Editor, use **Free Aspect** in Game view for accurate coordinate behavior.
 - Ensure required Tobii native DLLs are present for your target platform and build type.
-
-## Samples
-
-This package includes an optional sample scene under `Samples~/TGI Demo`.
-
-<!-- Maintainer note: Keep sample content in Samples~ so it stays hidden from normal package import and is exposed through Package Manager sample import only. -->
 
 ## License
 

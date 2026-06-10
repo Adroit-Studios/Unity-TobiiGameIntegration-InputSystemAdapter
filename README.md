@@ -14,15 +14,6 @@ Bridges Tobii Game Integration (TGI) tracking data into the Unity Input System a
 - Unity Input System package 1.7 or newer (`com.unity.inputsystem`)
 - Tobii Game Integration API SDK v9.0.4 or newer. https://developer.tobii.com/pc-gaming/downloads/ 
 
-## Installation (Git URL)
-
-In Unity Package Manager:
-
-1. Open **Window > Package Manager**.
-2. Click **+** > **Add package from git URL...**
-3. Enter your repository URL:
-
-   `https://github.com/Adroit-Studios/Unity-TobiiGameIntegration-InputSystemAdapter.git`
 
 ## Tobii SDK Setup
 
@@ -57,6 +48,14 @@ For `tobii_gameintegration_x64.dll` (native, Windows x64):
 - Standalone enabled
 - Windows x86_64 enabled
 
+In Unity Package Manager:
+
+1. Open **Window > Package Manager**.
+2. Click **+** > **Add package from git URL...**
+3. Enter your repository URL:
+
+   `https://github.com/Adroit-Studios/Unity-TobiiGameIntegration-InputSystemAdapter.git`
+
 ### 4. Common issues
 
 If Unity throws `DllNotFoundException`, usual causes are:
@@ -65,6 +64,7 @@ If Unity throws `DllNotFoundException`, usual causes are:
 - wrong native DLL variant for your platform
 - native DLL platform settings are incorrect
 
+## Installation (Git URL)
 If package scripts cannot resolve `Tobii.GameIntegration.Net` types:
 
 - managed `Tobii.GameIntegration.Net.dll` is missing

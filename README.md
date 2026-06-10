@@ -28,42 +28,48 @@ In Unity Package Manager:
 
 This package does not ship the Tobii Game Integration SDK files. You need to copy the required SDK files from the official Tobii SDK into your Unity project.
 
-### 1. Add the managed wrapper script
+### 1. Add the managed API DLL
 
-Copy `TobiiGameIntegrationApi.cs` from the Tobii SDK into your project under a normal runtime scripts folder, for example:
+Copy the managed SDK assembly into your project Plugins folder:
 
-- `Assets/Imported/Tobii/Scripts/TobiiGameIntegrationApi.cs`
+- `Assets/Plugins/Tobii.GameIntegration.Net.dll`
 
-The exact folder name is not important, but it must be inside `Assets/` so Unity compiles it.
+Do not include `TobiiGameIntegrationApi.cs` when using the managed DLL path.
 
-### 2. Add the native DLLs
+### 2. Add the native runtime DLL
 
-Copy the Tobii native plugin DLLs into a plugin folder in your project, for example:
+Copy the native plugin DLL into Plugins:
 
-- `Assets/Plugins/Tobii/`
-
-On Windows Editor x64, the important file is typically:
-
-- `tobii_gameintegration_x64.dll`
-
+- `Assets/Plugins/tobii_gameintegration_x64.dll`
 
 ### 3. Verify Unity import settings
 
-After copying the DLLs into `Assets/Plugins/Tobii/`, select each DLL in Unity and confirm the Plugin Inspector settings match the platform you want to support.
+Select each DLL in Unity and confirm Plugin Inspector settings.
 
-For a Windows-only setup, the DLL should usually be enabled for:
+For `Tobii.GameIntegration.Net.dll` (managed):
 
-- Editor
-- Standalone
-- Windows x86_64
+- `Auto Reference` enabled
+- Included for Editor and target runtime platforms
 
-### 4. Common issue
+For `tobii_gameintegration_x64.dll` (native, Windows x64):
 
-If Unity throws `DllNotFoundException`, the usual causes are:
+- Editor enabled
+- Standalone enabled
+- Windows x86_64 enabled
 
-- the DLL was not copied into the project
-- the wrong DLL variant was copied
-- `TobiiGameIntegrationApi.cs` is expecting a debug DLL name such as `tobii_gameintegration_x64_d.dll`, but only a release DLL is present. You may need to edit the provided `TobiiGameIntegrationApi.cs` in order to point to the non _d versions of the .dll files.
+### 4. Common issues
+
+If Unity throws `DllNotFoundException`, usual causes are:
+
+- native DLL not copied into `Assets/Plugins`
+- wrong native DLL variant for your platform
+- native DLL platform settings are incorrect
+
+If package scripts cannot resolve `Tobii.GameIntegration.Net` types:
+
+- managed `Tobii.GameIntegration.Net.dll` is missing
+- `Auto Reference` is disabled on the managed DLL
+- both `TobiiGameIntegrationApi.cs` and `Tobii.GameIntegration.Net.dll` are present and conflicting
 
 
 ## Quick Start

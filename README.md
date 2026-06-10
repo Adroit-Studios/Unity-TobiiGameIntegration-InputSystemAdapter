@@ -48,6 +48,7 @@ For `tobii_gameintegration_x64.dll` (native, Windows x64):
 - Standalone enabled
 - Windows x86_64 enabled
 
+## Installation (Git URL)
 In Unity Package Manager:
 
 1. Open **Window > Package Manager**.

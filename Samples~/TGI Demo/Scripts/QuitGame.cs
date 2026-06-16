@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityTobiiGameIntegrationInputSystemAdapter.Demo
+namespace Unity_TobiiGameIntegration_InputSystemAdapter.Demo
 {
     public class QuitGame : MonoBehaviour
     {

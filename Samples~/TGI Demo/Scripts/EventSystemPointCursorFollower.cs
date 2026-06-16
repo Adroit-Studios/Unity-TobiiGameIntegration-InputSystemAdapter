@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.UI;
 
-namespace KenRampage.Unity.Input
+namespace Unity_TobiiGameIntegration_InputSystemAdapter.Demo
 {
     /// <summary>
     /// Moves a target UI RectTransform using the EventSystem's Point action position.

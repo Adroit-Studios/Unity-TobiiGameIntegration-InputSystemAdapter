@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-namespace KenRampage.Unity.Input
+namespace Unity_TobiiGameIntegration_InputSystemAdapter.Demo
 {
     /// <summary>
     /// Listens for Input Action events and relays them through UnityEvents.

@@ -1,6 +1,6 @@
 {
   "name": "com.adroit.tobii.tgi-inputsystem-adapter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Tobii TGI Input System Adapter",
   "description": "Bridges Tobii Game Integration data into Unity Input System as virtual devices.",
   "unity": "6.0",
